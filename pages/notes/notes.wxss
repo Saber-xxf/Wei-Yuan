@@ -75,6 +75,8 @@
     text-align: center;
     margin: 1px auto;
     border-radius: 10px;
+    padding-left: 5rpx;
+    padding-right: 5rpx;
 }
 .text-content{
   padding: 10px;

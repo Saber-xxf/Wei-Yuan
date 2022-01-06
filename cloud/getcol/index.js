@@ -2,7 +2,7 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init()
-const MAX_LIMIT = 5
+const MAX_LIMIT = 6
 // 云函数入口函数
 exports.main = async (event, context) => {
   return cloud.database().collection('col').skip(event.page * MAX_LIMIT).limit(MAX_LIMIT).where({

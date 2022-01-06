@@ -14,6 +14,6 @@ App({
     oppenid:'',
     appid: 'wx265468310f8c8156',//appid需自己提供，此处的appid我随机编写
     secret: '69a16636a5d25364a54ce27eabf212af',//secret需自己提供，此处的secret我随机编写
-  
+   appSecret:'1fb308ad87ba01420425fee6ab6901fc'
   }
 })

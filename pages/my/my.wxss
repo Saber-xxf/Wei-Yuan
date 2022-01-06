@@ -19,15 +19,25 @@ border-bottom: 1rpx solid #ddd;
  align-items: center;
  text-align: left;
  font-weight: 500;
+ line-height: 38px;
 
 }
 .cuIcon-service{
    margin-right: 10rpx;
   line-height: 100rpx;
 }
+.text-blue{
+  margin-right: 10rpx;
+
+}
+.text-green{
+  margin-right: 10rpx;
+
+}
 .share text{
   align-content: center;
   padding-left: 10rpx;
+  
 }
 .cuIcon-discoverfill{
   margin-right: 10rpx;

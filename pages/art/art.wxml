@@ -23,7 +23,7 @@
         </view>
       </view>
       <view class="about">{{cloud[index0].about}} </view>
-      
+      <ad class="ad" unit-id="adunit-d065b21aa9e6ac89"></ad>
       <view class="cu-bar bg-white margin-top" id="lab">
         <view class="action">
           <text class="cuIcon-title text-blue"></text> 相关推荐

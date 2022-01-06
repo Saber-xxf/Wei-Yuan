@@ -8,6 +8,7 @@ let col;
 let lock=false;
 let lockcol=false;
 let show=false;
+let interstitialAd = null;
 Page({
 
   /**
@@ -98,7 +99,14 @@ Page({
       })
 
     }
-    
+    if (wx.createInterstitialAd) {
+      interstitialAd = wx.createInterstitialAd({
+        adUnitId: 'adunit-af76ef89c51a0231'
+      })
+      interstitialAd.onLoad(() => {})
+      interstitialAd.onError((err) => {})
+      interstitialAd.onClose(() => {})
+    }
   },
   previewImg: function (e) {
     console.log(e.currentTarget.dataset.index);
@@ -388,6 +396,11 @@ Page({
     })
   },
   getAdr:function(){
+    if (interstitialAd) {
+      interstitialAd.show().catch((err) => {
+        console.error(err)
+      })
+    }
     var that=this;
     if (app.globalData.userInfo.length == 0 || app.globalData.oppenid == '') {
       wx.showModal({
@@ -491,10 +504,7 @@ Page({
     var title=that.data.cloud[that.data.index0].title;
     var pic = that.data.cloud[that.data.index0].p1;
     
-    that.setData({
-        iflink: true
-      })
-    
+   
     
     return {
       title: title,

@@ -30,37 +30,31 @@
       <text class="cuIcon-service text-green"></text>
       <text class="text-grey">联系客服</text>
     </button>
-      
-      
     </view>
     <view  wx:if="{{false}}" class="cu-item {{menuArrow?'arrow':''}}">
-      <view class="content" bindtap="enterAdmin">
+      <button class="share" bindtap="enterAdmin">
         <text class="cuIcon-tagfill text-red"></text>
         <text class="text-grey">管理后台</text>
-      </view>
+      </button>
     </view>
     <view class="cu-item {{menuArrow?'arrow':''}}">
-      <view class="content" bindtap="enterCol">
+      <button class="share" bindtap="enterCol">
         <text class="cuIcon-favorfill text-blue"></text>
         <text class="text-grey">我的收藏</text>
-      </view>
+      </button>
     </view>
     <view class="cu-item {{menuArrow?'arrow':''}}" bindtap="about">
-      <view class="content">
+      <button class="share">
         <text class="cuIcon-emojiflashfill text-green"></text>
         <text class="text-grey">关于我们</text>
-      </view>
+      </button>
       <view class="action">
-        <text class="text-grey text-sm">小目标还没有实现！</text>
+        
       </view>
     </view>
 
-      <view class="adv">
-    <swiper class="screen-swiper round-dot tutu"  circular="true" autoplay="true" interval="5000" duration="500">
-  <swiper-item wx:for="{{adv}}" wx:key>
-    <image class="swpic" src="{{item}}" mode='aspectFit'></image>
-  </swiper-item>
-</swiper>
+<view class="adv">
+  <ad unit-id="adunit-11b15fb6087bd6a1"></ad>
   </view>
   </view>
   </view>

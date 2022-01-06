@@ -18,7 +18,7 @@
         <view class="con">
           <image src="{{item.pic[0]}}" mode="aspectFill" bindtap="enterArt" data-id="{{index}}"></image>
           <view class="content-text">
-            <view class="text-content" bindtap="enterArt" data-id="{{index}}"> {{item.about}}</view>
+            <view class="text-content" bindtap="enterArt" data-id="{{index}}"> {{item.about[0]}}</view>
             <view class="box-round">
               <view class="time">{{item.time}}</view>
               <view class="box-z">        

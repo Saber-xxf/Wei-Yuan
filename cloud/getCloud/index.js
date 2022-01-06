@@ -2,7 +2,7 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init()
-const MAX_LIMIT = 12
+const MAX_LIMIT = 8
 // 云函数入口函数
 exports.main = async (event, context) => {
   

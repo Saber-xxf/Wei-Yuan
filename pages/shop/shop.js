@@ -1,7 +1,5 @@
-// pages/shop/shop.js
 var util = require('../../utils/dateUtil.js');
 let page;
-let key;
 let long;
 let cj=0;
 const app = getApp();
@@ -38,6 +36,7 @@ Page({
       })
     }
     else {
+      cj=0;
     this.loadInitData();
     }
   },
@@ -53,7 +52,7 @@ Page({
       success(res) {
         console.log("纪录", res.result.data);
         long = res.result.data.length;
-        if(long<2){
+        if(long<6){
           that.setData({
             mif:false
           })
@@ -125,7 +124,6 @@ Page({
     }).get({
       success(res) {
         if (res.data.length != 0) {
-          
           var obj =new Object();
           obj.time=time;
           obj.data = res.data;
@@ -138,14 +136,11 @@ Page({
               mif: true
             })
           }
-          
           else{
             that.setData({
               cloud: cloud
             })
           }
-         
-          
         }
       },
       fail(res) {
@@ -179,7 +174,6 @@ Page({
           cloud[i]= cloud[j];
           cloud[j]=temp;
         }
-
       }
       console.log(cloud[i].time);
     }

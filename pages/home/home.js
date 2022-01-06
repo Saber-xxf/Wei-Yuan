@@ -7,6 +7,7 @@ let lockcol=false;
 let page;
 let key;
 let record=[];
+let interstitialAd = null;
 const app=getApp();
 Page({
 
@@ -445,6 +446,14 @@ Page({
  
   onLoad: function (options) {
     var that = this;
+    if (wx.createInterstitialAd) {
+      interstitialAd = wx.createInterstitialAd({
+        adUnitId: 'adunit-043bedaea96324b9'
+      })
+      interstitialAd.onLoad(() => {})
+      interstitialAd.onError((err) => {})
+      interstitialAd.onClose(() => {})
+    }
     try {
       record = wx.getStorageSync('record');
       if(!record){
@@ -559,6 +568,11 @@ Page({
         }
       }
     })
+    if (interstitialAd) {
+      interstitialAd.show().catch((err) => {
+        console.error(err)
+      })
+    }
    
   },
   loadInitData: function (){

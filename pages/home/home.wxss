@@ -165,8 +165,8 @@
   margin-top: 2px;
   padding: 2px 8px;
   line-height: 36rpx;
-  height: 77rpx;
-  min-width: 133px;
+  height: 72rpx;
+  min-width: 132px;
   overflow: hidden;
 }
 .box-round{

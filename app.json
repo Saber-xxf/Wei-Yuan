@@ -35,9 +35,9 @@
       },
       {
         "pagePath": "pages/market/market",
-        "text": "商城",
-        "iconPath": "pages/image/20.png",
-        "selectedIconPath": "pages/image/20.png"
+        "text": "标签",
+        "iconPath": "pages/image/g10.png",
+        "selectedIconPath": "pages/image/g10.png"
       },
       {
         "pagePath": "pages/notes/notes",
